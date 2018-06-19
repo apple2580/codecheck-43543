@@ -1,7 +1,7 @@
 package codecheck;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.lang.*;
 
 public class App {
 	public static void main(String[] args) {
@@ -18,17 +18,18 @@ public class App {
 				String str = args[1];
 				int len = str.length();
 
-				for (int a = 1; a = len; a++) {
+				for (int j = 1; j = len; j++) {
 
 				}
 
 			} else if (subCommand.equals(en)) {
-				int num = args[1];
+				int num = Integer.parseInt(args[1]);
 				StringBuilder sb = new StringBuilder();
 
 				while (num != 0) {
 					sb.append((String) ((num - 1) % 9 + 'A'));
-					output = (num - 1) / 9;
+					num = (num - 1) / 9;
+					output = Integer.toString(num);
 				}
 			}
 
