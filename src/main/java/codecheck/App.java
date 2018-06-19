@@ -13,7 +13,7 @@ public class App {
 			String s0 = args[0];
 			String s1 = args[1];
 
-			System.out.println(v0 + v1 + s0 + s1);
+			System.out.println(/*v0 + v1 + */s0 + s1);
 
 			String subCommand = args[0];
 
