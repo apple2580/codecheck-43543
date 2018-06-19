@@ -23,29 +23,27 @@ public class App {
 					if (str.equals("A")) {
 						sum = sum + 0;
 					} else if (str.equals("B")) {
-						sum = sum + (1 * (9 * (j - 1)));
+						sum = sum + (1 + (9 * (j - 1)));
 					} else if (str.equals("C")) {
-						sum = sum + (2 * (9 * (j - 1)));
+						sum = sum + (2 + (9 * (j - 1)));
 					} else if (str.equals("D")) {
-						sum = sum + (3 * (9 * (j - 1)));
+						sum = sum + (3 + (9 * (j - 1)));
 					} else if (str.equals("E")) {
-						sum = sum + (4 * (9 * (j - 1)));
+						sum = sum + (4 + (9 * (j - 1)));
 					} else if (str.equals("F")) {
-						sum = sum + (5 * (9 * (j - 1)));
+						sum = sum + (5 + (9 * (j - 1)));
 					} else if (str.equals("G")) {
-						sum = sum + (6 * (9 * (j - 1)));
+						sum = sum + (6 + (9 * (j - 1)));
 					} else if (str.equals("H")) {
-						sum = sum + (7 * (9 * (j - 1)));
+						sum = sum + (7 + (9 * (j - 1)));
 					} else if (str.equals("I")) {
-						sum = sum + (8 * (9 * (j - 1)));
+						sum = sum + (8 + (9 * (j - 1)));
 					} else {
 						System.out.println("エラー");
 					}
 				}
 
-				System.out.println(sum);
 				output = Integer.toString(sum);
-				System.out.println(output);
 
 			} else if (subCommand.equals(en)) {
 				int num = Integer.parseInt(args[1]);
