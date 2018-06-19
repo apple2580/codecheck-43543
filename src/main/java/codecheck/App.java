@@ -18,17 +18,17 @@ public class App {
 				String str = args[1];
 				int len = str.length();
 
-				for (int j = 1; j = len; j++) {
+				//for (int j = 1; j == len; j++) {
 
-				}
+				//}
 
 			} else if (subCommand.equals(en)) {
 				int num = Integer.parseInt(args[1]);
 				StringBuilder sb = new StringBuilder();
 
 				while (num != 0) {
-					sb.append((String) ((num - 1) % 9 + 'A'));
-					num = (num - 1) / 9;
+					sb.append((int) ((num - 1) % 8 + 'A'));
+					num = (num - 1) / 8;
 					output = Integer.toString(num);
 				}
 			}
