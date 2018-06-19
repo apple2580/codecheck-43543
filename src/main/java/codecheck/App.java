@@ -63,7 +63,9 @@ public class App {
 					output = Integer.toString(num);
 				}
 			}
+
+			System.out.println(output);
+
 		}
-		System.out.println(output);
 	}
 }
