@@ -43,7 +43,9 @@ public class App {
 					}
 				}
 
+				System.out.println(sum);
 				output = Integer.toString(sum);
+				System.out.println(output);
 
 			} else if (subCommand.equals(en)) {
 				int num = Integer.parseInt(args[1]);
