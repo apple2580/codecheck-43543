@@ -48,7 +48,7 @@ public class App {
 			} else if (subCommand.equals(en)) {
 
 				int num10 = Integer.parseInt(args[1]);
-				int num9 = Integer.parseInt(Integer.toString(num,9));
+				int num9 = Integer.parseInt(Integer.toString(num10,9));
 
 				output = Integer.toString(num9);
 
