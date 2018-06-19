@@ -8,8 +8,8 @@ public class App {
 		for (int i = 0, l = args.length; i < l; i++) {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 
-			String v0 = argv[0];
-			String v1 = argv[1];
+			//String v0 = argv[0];
+			//String v1 = argv[1];
 			String s0 = args[0];
 			String s1 = args[1];
 
