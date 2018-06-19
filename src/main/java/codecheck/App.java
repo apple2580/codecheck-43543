@@ -8,13 +8,6 @@ public class App {
 		for (int i = 0, l = args.length; i < l; i++) {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 
-			//String v0 = argv[0];
-			//String v1 = argv[1];
-			String s0 = args[0];
-			String s1 = args[1];
-
-			System.out.println(/*v0 + v1 + */s0 + s1);
-
 			String subCommand = args[0];
 
 			String en = "encode";
@@ -27,34 +20,26 @@ public class App {
 				int sum = 0;
 
 				for (int j = 1; j == len; j++) {
-					switch (str) {
-					case "A":
+					if (str.equals("A")) {
 						sum = sum + 0;
-						break;
-					case "B":
+					} else if (str.equals("B")) {
 						sum = sum + (1 * (9 * (j - 1)));
-						break;
-					case "C":
+					} else if (str.equals("C")) {
 						sum = sum + (2 * (9 * (j - 1)));
-						break;
-					case "D":
+					} else if (str.equals("D")) {
 						sum = sum + (3 * (9 * (j - 1)));
-						break;
-					case "E":
+					} else if (str.equals("E")) {
 						sum = sum + (4 * (9 * (j - 1)));
-						break;
-					case "F":
+					} else if (str.equals("F")) {
 						sum = sum + (5 * (9 * (j - 1)));
-						break;
-					case "G":
+					} else if (str.equals("G")) {
 						sum = sum + (6 * (9 * (j - 1)));
-						break;
-					case "H":
+					} else if (str.equals("H")) {
 						sum = sum + (7 * (9 * (j - 1)));
-						break;
-					case "I":
+					} else if (str.equals("I")) {
 						sum = sum + (8 * (9 * (j - 1)));
-						break;
+					} else {
+						System.out.println("エラー");
 					}
 				}
 
