@@ -46,6 +46,12 @@ public class App {
 				output = Integer.toString(sum);
 
 			} else if (subCommand.equals(en)) {
+
+				int num10 = Integer.parseInt(args[1]);
+				int output = Integer.parseInt(Integer.toString(num,9));
+
+
+				/*
 				int num = Integer.parseInt(args[1]);
 				StringBuilder sb = new StringBuilder();
 
@@ -54,6 +60,7 @@ public class App {
 					num = (num - 1) / 8;
 					output = Integer.toString(num);
 				}
+				*/
 			}
 
 			System.out.println(output);
