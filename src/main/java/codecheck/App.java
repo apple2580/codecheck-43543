@@ -61,16 +61,48 @@ public class App {
 				}
 				// output = Integer.toString(num9);
 
-				/*
-				int num = Integer.parseInt(args[1]);
 				StringBuilder sb = new StringBuilder();
 
-				while (num != 0) {
-					sb.append((int) ((num - 1) % 8 + 'A'));
-					num = (num - 1) / 8;
-					output = Integer.toString(num);
+				while (num10 != 0) {
+					int remainder = 0;
+
+					remainder = num10 % 9;
+					num10 = (num10 - remainder) / 9;
+
+					switch (remainder) {
+					case 0:
+						sb.append("A");
+						break;
+					case 1:
+						sb.append("B");
+						break;
+					case 2:
+						sb.append("C");
+						break;
+					case 3:
+						sb.append("D");
+						break;
+					case 4:
+						sb.append("E");
+						break;
+					case 5:
+						sb.append("F");
+						break;
+					case 6:
+						sb.append("G");
+						break;
+					case 7:
+						sb.append("H");
+						break;
+					case 8:
+						sb.append("I");
+						break;
+					default:
+						sb.append("エラー");
+					}
+
+					output = sb.toString();
 				}
-				*/
 			}
 
 			System.out.println(output);
