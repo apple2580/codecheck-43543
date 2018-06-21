@@ -71,34 +71,34 @@ public class App {
 
 					switch (remainder) {
 					case 0:
-						sb.append("A");
+						sb.insert("A");
 						break;
 					case 1:
-						sb.append("B");
+						sb.insert("B");
 						break;
 					case 2:
-						sb.append("C");
+						sb.insert("C");
 						break;
 					case 3:
-						sb.append("D");
+						sb.insert("D");
 						break;
 					case 4:
-						sb.append("E");
+						sb.insert("E");
 						break;
 					case 5:
-						sb.append("F");
+						sb.insert("F");
 						break;
 					case 6:
-						sb.append("G");
+						sb.insert("G");
 						break;
 					case 7:
-						sb.append("H");
+						sb.insert("H");
 						break;
 					case 8:
-						sb.append("I");
+						sb.insert("I");
 						break;
 					default:
-						sb.append("エラー");
+						sb.insert("エラー");
 					}
 
 					output = sb.toString();
