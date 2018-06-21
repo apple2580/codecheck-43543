@@ -66,9 +66,9 @@ public class App {
 				StringBuilder sb = new StringBuilder();
 
 				while (num10 != 0) {
-					float remainder = 0;
+					int remainder = 0;
 
-					remainder = num10 % radix;
+					remainder = Integer.parseInt(num10 % radix);
 					num10 = (num10 - remainder) / radix;
 
 					switch (remainder) {
