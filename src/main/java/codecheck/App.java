@@ -57,7 +57,7 @@ public class App {
 
 					// 入力値（10進数）
 					// int num10 = Integer.parseInt(args[1]);
-					int num10 = Float.parseFloat(args[1]);
+					int num10 = Integer.parseInt(args[1]);
 
 					StringBuilder sb = new StringBuilder();
 
