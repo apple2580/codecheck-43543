@@ -53,11 +53,11 @@ public class App {
 				} else {
 
 					// 基数
-					//int radix = 9;
-					double radix = 9;
+					int radix = 9;
+					//double radix = 9;
 
 					// 入力値（10進数）
-					// int num10 = Integer.parseInt(args[1]);
+					//int num10 = Integer.parseInt(args[1]);
 					double num10 = Double.parseDouble(args[1]);
 
 					StringBuilder sb = new StringBuilder();
@@ -65,7 +65,8 @@ public class App {
 					while (num10 != 0) {
 						//int remainder = num10 % radix;
 
-						double remainder_D = num10 % radix;
+						double remainder_D = num10 % Double.parseDouble(radix);
+						//double remainder_D = num10 % radix;
 						int remainder = (int)remainder_D;
 
 						num10 = (num10 - remainder) / radix;
