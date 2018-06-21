@@ -66,7 +66,7 @@ public class App {
 				StringBuilder sb = new StringBuilder();
 
 				while (num10 != 0) {
-					float remainder_f = (num10 % radix;
+					float remainder_f = num10 % radix;
 					int remainder = (int)remainder_f;
 
 					num10 = (num10 - remainder) / radix;
