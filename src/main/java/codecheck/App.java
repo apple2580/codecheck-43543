@@ -48,24 +48,25 @@ public class App {
 			} else if (subCommand.equals(en)) {
 
 				// if (args[1].equals(276910033818923479812737657823469876718641987649781361463764954098802518764628237467231873628347582973485972834752784935773114658736582736458972634785)) {
-				if (args[1].length() > 20) {
+				if (args[1].length() > 200) {
 					output = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
 				} else {
 
 					// 基数
-					int radix = 9;
+					//int radix = 9;
+					double radix = 9;
 
 					// 入力値（10進数）
 					// int num10 = Integer.parseInt(args[1]);
-					int num10 = Integer.parseInt(args[1]);
+					double num10 = Double.parseDouble(args[1]);
 
 					StringBuilder sb = new StringBuilder();
 
 					while (num10 != 0) {
-						int remainder = num10 % radix;
+						//int remainder = num10 % radix;
 
-						// double remainder_D = num10 % radix;
-						// int remainder = (int)remainder_D;
+						double remainder_D = num10 % radix;
+						int remainder = (int)remainder_D;
 
 						num10 = (num10 - remainder) / radix;
 
