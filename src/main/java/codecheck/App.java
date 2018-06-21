@@ -48,11 +48,11 @@ public class App {
 			} else if (subCommand.equals(en)) {
 
 				// 基数
-				float radix = 9;
+				double radix = 9;
 
 				// 入力値（10進数）
 				// int num10 = Integer.parseInt(args[1]);
-				float num10 = Float.parseFloat(args[1]);
+				double num10 = Float.parseFloat(args[1]);
 				// 基数変換
 				// int num9 = Integer.parseInt(Integer.toString(num10,radix));
 
@@ -66,8 +66,8 @@ public class App {
 				StringBuilder sb = new StringBuilder();
 
 				while (num10 != 0) {
-					float remainder_f = num10 % radix;
-					int remainder = (int)remainder_f;
+					double remainder_D = num10 % radix;
+					int remainder = (int)remainder_D;
 
 					num10 = (num10 - remainder) / radix;
 
