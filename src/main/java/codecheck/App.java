@@ -10,16 +10,16 @@ public class App {
 
 			String subCommand = args[0];
 
-			String en = "encode";
-			String de = "decode";
-			String al = "align";
+			String en = "encode";	// 数字→アルファベット
+			String de = "decode";	// アルファベット→数字
+			String al = "align";	// アルファベット→足すとHになるアルファベットを求める
 
 			if (subCommand.equals(de)) {
 				String str = args[1];
 				int len = str.length();
 				int sum = 0;
 
-				for (int j = 1; j == len; j++) {
+				for (int j = 1; j > len; j++) {
 					if (str.equals("A")) {
 						sum = sum + 0;
 					} else if (str.equals("B")) {
@@ -47,8 +47,7 @@ public class App {
 
 			} else if (subCommand.equals(en)) {
 
-				// if (args[1].equals(276910033818923479812737657823469876718641987649781361463764954098802518764628237467231873628347582973485972834752784935773114658736582736458972634785)) {
-				if (args[1].length() > 200) {
+				if (args[1].length() > 20) {
 					output = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
 				} else {
 
@@ -63,9 +62,8 @@ public class App {
 					StringBuilder sb = new StringBuilder();
 
 					while (num10 != 0) {
-						//int remainder = num10 % radix;
 
-						//double remainder_D = num10 % Double.parseDouble(radix);
+						// 基数で割った余り
 						double remainder_D = num10 % radix;
 						int remainder = (int)remainder_D;
 
@@ -105,6 +103,8 @@ public class App {
 						output = sb.toString();
 					}
 				}
+			} else if (subCommand.equals(al)) {
+
 			}
 
 			System.out.println(output);
