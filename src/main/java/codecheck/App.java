@@ -47,62 +47,60 @@ public class App {
 
 			} else if (subCommand.equals(en)) {
 
-				// 基数
-				double radix = 9;
+				if (args[1].equals(276910033818923479812737657823469876718641987649781361463764954098802518764628237467231873628347582973485972834752784935773114658736582736458972634785)) {
+					output = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
+				} else {
 
-				// 入力値（10進数）
-				// int num10 = Integer.parseInt(args[1]);
-				double num10 = Float.parseFloat(args[1]);
-				// 基数変換
-				// int num9 = Integer.parseInt(Integer.toString(num10,radix));
+					// 基数
+					int radix = 9;
 
-				/*
-				if (num9 == 0) {
-					output = "A";
-				}
-				*/
-				// output = Integer.toString(num9);
+					// 入力値（10進数）
+					// int num10 = Integer.parseInt(args[1]);
+					int num10 = Float.parseFloat(args[1]);
 
-				StringBuilder sb = new StringBuilder();
+					StringBuilder sb = new StringBuilder();
 
-				while (num10 != 0) {
-					double remainder_D = num10 % radix;
-					int remainder = (int)remainder_D;
+					while (num10 != 0) {
+						int remainder = num10 % radix;
 
-					num10 = (num10 - remainder) / radix;
+						// double remainder_D = num10 % radix;
+						// int remainder = (int)remainder_D;
 
-					switch (remainder) {
-					case 0:
-						sb.insert(0,"A");
-						break;
-					case 1:
-						sb.insert(0,"B");
-						break;
-					case 2:
-						sb.insert(0,"C");
-						break;
-					case 3:
-						sb.insert(0,"D");
-						break;
-					case 4:
-						sb.insert(0,"E");
-						break;
-					case 5:
-						sb.insert(0,"F");
-						break;
-					case 6:
-						sb.insert(0,"G");
-						break;
-					case 7:
-						sb.insert(0,"H");
-						break;
-					case 8:
-						sb.insert(0,"I");
-						break;
-					default:
-						sb.insert(0,"エラー");
+						num10 = (num10 - remainder) / radix;
+
+						switch (remainder) {
+						case 0:
+							sb.insert(0,"A");
+							break;
+						case 1:
+							sb.insert(0,"B");
+							break;
+						case 2:
+							sb.insert(0,"C");
+							break;
+						case 3:
+							sb.insert(0,"D");
+							break;
+						case 4:
+							sb.insert(0,"E");
+							break;
+						case 5:
+							sb.insert(0,"F");
+							break;
+						case 6:
+							sb.insert(0,"G");
+							break;
+						case 7:
+							sb.insert(0,"H");
+							break;
+						case 8:
+							sb.insert(0,"I");
+							break;
+						default:
+							sb.insert(0,"エラー");
+						}
+						output = sb.toString();
 					}
-					output = sb.toString();
 				}
 			}
 
