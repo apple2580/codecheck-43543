@@ -65,8 +65,8 @@ public class App {
 					while (num10 != 0) {
 						//int remainder = num10 % radix;
 
-						double remainder_D = num10 % Double.parseDouble(radix);
-						//double remainder_D = num10 % radix;
+						//double remainder_D = num10 % Double.parseDouble(radix);
+						double remainder_D = num10 % radix;
 						int remainder = (int)remainder_D;
 
 						num10 = (num10 - remainder) / radix;
