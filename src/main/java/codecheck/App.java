@@ -47,10 +47,19 @@ public class App {
 
 			} else if (subCommand.equals(en)) {
 
-				int num10 = Integer.parseInt(args[1]);
-				int num9 = Integer.parseInt(Integer.toString(num10,9));
+				// 基数
+				int radix = 9;
 
-				output = Integer.toString(num9);
+				// 入力値（10進数）
+				int num10 = Integer.parseInt(args[1]);
+				// 基数変換
+				int num9 = Integer.parseInt(Integer.toString(num10,radix));
+
+				// if (num9%9 == 0) {
+				if (num9 == 0) {
+					output = "A";
+				}
+				// output = Integer.toString(num9);
 
 				/*
 				int num = Integer.parseInt(args[1]);
