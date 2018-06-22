@@ -104,7 +104,7 @@ public class App {
 
 			if (args[1].length() > 20) {
 				result = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
-			} else if (args[1] == 0) {
+			} else if (args[1].equals("0")) {
 				result = "A";
 			} else {
 
