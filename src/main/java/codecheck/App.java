@@ -261,7 +261,7 @@ public class App {
 					H.insert(0,"H");
 				}
 
-				result = result + " + " + H;
+				result =str + " + " + result + " = " + H;
 
 				System.out.println(index2);
 				System.out.println(sum);
