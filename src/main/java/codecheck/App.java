@@ -151,14 +151,15 @@ public class App {
 					}
 				}
 			} else if (subCommand.equals(al)) {
-				// 基準値
+
+				// 基準値（H）
 				int value = 7;
 
 				String str = args[1];
 				int len = str.length();
 
 				int index = (int)Math.pow(radix, len);
-				int index_value = (int)Math.pow(radix, value);
+				int index_value = (int)Math.pow(value, len);
 
 				System.out.println(index);
 				System.out.println(index_value);
