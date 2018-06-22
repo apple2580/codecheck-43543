@@ -213,7 +213,7 @@ public class App {
 			StringBuilder sb = new StringBuilder();
 			StringBuilder H = new StringBuilder();
 
-			if (sum < index2) {
+			if (sum <= index2) {
 				difference = index2 - sum;
 
 				while (difference != 0) {
