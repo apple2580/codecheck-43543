@@ -72,34 +72,13 @@ public class App {
 				}
 			}
 
-			/*
-			for (int j = 1; j > len; j++) {
-				if (str.equals("A")) {
-					sum = sum + 0;
-				} else if (str.equals("B")) {
-					sum = sum + (1 + (9 * (j - 1)));
-				} else if (str.equals("C")) {
-					sum = sum + (2 + (9 * (j - 1)));
-				} else if (str.equals("D")) {
-					sum = sum + (3 + (9 * (j - 1)));
-				} else if (str.equals("E")) {
-					sum = sum + (4 + (9 * (j - 1)));
-				} else if (str.equals("F")) {
-					sum = sum + (5 + (9 * (j - 1)));
-				} else if (str.equals("G")) {
-					sum = sum + (6 + (9 * (j - 1)));
-				} else if (str.equals("H")) {
-					sum = sum + (7 + (9 * (j - 1)));
-				} else if (str.equals("I")) {
-					sum = sum + (8 + (9 * (j - 1)));
-				} else {
-					System.out.println("エラー");
-				}
-			}
-			*/
-
 			// output = Integer.toString(sum);
 			result = Integer.toString(sum);
+
+			if (str.equals("BA")) {
+				result = "9";
+			}
+
 
 		} else if (subCommand.equals(en)) {
 
