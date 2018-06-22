@@ -160,7 +160,8 @@ public class App {
 				int index = (int)Math.pow(radix, len);
 				int index_value = (int)Math.pow(radix, value);
 
-				output = Integer.toString(index + "：" + index_value);
+				System.out.println(index);
+				System.out.println(index_value);
 
 			}
 
