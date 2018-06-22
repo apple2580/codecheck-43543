@@ -209,11 +209,12 @@ public class App {
 			// int index = (int)Math.pow(radix, len);
 			int index = (int)Math.pow(value, len);
 			int indexPlus = (int)Math.pow(value, len + 1);
+			int difference = 0;
 
 			if (sum > index) {
-				int difference = index - sum;
+				difference = index - sum;
 			} else {
-				int difference = indexPlus - sum;
+				difference = indexPlus - sum;
 			}
 
 
