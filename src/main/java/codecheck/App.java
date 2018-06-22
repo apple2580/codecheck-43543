@@ -24,8 +24,12 @@ public class App {
 				String[] strArray = new String[len];
 				int sum = 0;
 
+				for (int j = len; j > 0; j--) {
+					strArray[j] = String.valueOf(str.charAt(j));
+				}
+
 				for (int j = 0; j < len; j++) {
-					strArray[len-j] = String.valueOf(str.charAt(j));
+					//strArray[j] = String.valueOf(str.charAt(j));
 					int index = (int)Math.pow(radix, j);
 
 					switch (strArray[j]) {
