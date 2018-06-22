@@ -24,7 +24,7 @@ public class App {
 		if (subCommand.equals(de)) {
 
 			String str = args[1];
-			int len = str.length() - 1;
+			int len = str.length();
 			String[] strArray = new String[len];
 			int sum = 0;
 
@@ -165,7 +165,7 @@ public class App {
 			int value = 7;
 
 			String str = args[1];
-			int len = str.length() - 1;
+			int len = str.length();
 			String[] strArray = new String[len];
 			int sum = 0;
 
@@ -207,17 +207,19 @@ public class App {
 			}
 
 			// int index = (int)Math.pow(radix, len);
-			int index = (int)Math.pow(value, len);
+			int index2 = (int)Math.pow(value, len);
 			int indexPlus = (int)Math.pow(value, len + 1);
 			int difference = 0;
 
-			if (sum > index) {
-				difference = sum - index;
-				System.out.println(index);
+			if (sum > index2) {
+				difference = sum - index2;
+
+				System.out.println(index2);
 				System.out.println(sum);
 				System.out.println(difference);
 			} else {
 				difference = indexPlus - sum;
+
 				System.out.println(indexPlus);
 				System.out.println(sum);
 				System.out.println(difference);
