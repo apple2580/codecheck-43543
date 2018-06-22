@@ -25,7 +25,8 @@ public class App {
 				int sum = 0;
 
 				// アルファベットを1文字ずつ配列に逆順で格納する
-				for (int j = len-1; j-- > 0;) {
+				//for (int j = len; j-- > 0;) {
+				for (int j = len; j > 0; j++) {
 					strArray[j] = String.valueOf(str.charAt(j));
 				}
 
