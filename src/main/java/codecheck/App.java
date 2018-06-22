@@ -10,6 +10,9 @@ public class App {
 
 			String subCommand = args[0];
 
+			// 基数
+			int radix = 9;
+			//double radix = 9;
 			String en = "encode";	// 数字→アルファベット
 			String de = "decode";	// アルファベット→数字
 			String al = "align";	// アルファベット→足すとHになるアルファベットを求める
@@ -28,28 +31,28 @@ public class App {
 						sum = sum + 0;
 						break;
 					case "B":
-						sum = sum + (1 * (9 * j));
+						sum = sum + 1 * Math.pow(radix, j);
 						break;
 					case "C":
-						sum = sum + (2 * (9 * j));
+						sum = sum + 2 * Math.pow(radix, j);
 						break;
 					case "D":
-						sum = sum + (3 * (9 * j));
+						sum = sum + 3 * Math.pow(radix, j);
 						break;
 					case "E":
-						sum = sum + (4 * (9 * j));
+						sum = sum + 4 * Math.pow(radix, j));
 						break;
 					case "F":
-						sum = sum + (5 * (9 * j));
+						sum = sum + 5 * Math.pow(radix, j);
 						break;
 					case "G":
-						sum = sum + (6 * (9 * j));
+						sum = sum + 6 * Math.pow(radix, j);
 						break;
 					case "H":
-						sum = sum + (7 * (9 * j));
+						sum = sum + 7 * Math.pow(radix, j);
 						break;
 					case "I":
-						sum = sum + (8 * (9 * j));
+						sum = sum + 8 * Math.pow(radix, j);
 						break;
 					default:
 						System.out.println("エラー");
@@ -90,9 +93,6 @@ public class App {
 					output = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
 				} else {
 
-					// 基数
-					int radix = 9;
-					//double radix = 9;
 
 					// 入力値（10進数）
 					//int num10 = Integer.parseInt(args[1]);
