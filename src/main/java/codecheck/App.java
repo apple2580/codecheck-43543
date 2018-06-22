@@ -40,7 +40,7 @@ public class App {
 						sum = sum + 3 * Math.pow(radix, j);
 						break;
 					case "E":
-						sum = sum + 4 * Math.pow(radix, j));
+						sum = sum + 4 * Math.pow(radix, j);
 						break;
 					case "F":
 						sum = sum + 5 * Math.pow(radix, j);
