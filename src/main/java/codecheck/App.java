@@ -220,6 +220,7 @@ public class App {
 			System.out.println(indexPlus);
 			System.out.println(index);
 			System.out.println(sum);
+			System.out.println(difference);
 
 		}
 
