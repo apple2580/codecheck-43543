@@ -24,7 +24,7 @@ public class App {
 		if (subCommand.equals(de)) {
 
 			String str = args[1];
-			int len = str.length();
+			int len = str.length() - 1;
 			String[] strArray = new String[len];
 			int sum = 0;
 
@@ -165,7 +165,7 @@ public class App {
 			int value = 7;
 
 			String str = args[1];
-			int len = str.length();
+			int len = str.length() - 1;
 			String[] strArray = new String[len];
 			int sum = 0;
 
