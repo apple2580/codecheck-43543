@@ -261,17 +261,17 @@ public class App {
 					H.insert(0,"H");
 				}
 
+				if (str.equals("A")) {
+					result = "A";
+				}
+
 				result =str + " + " + result + " = " + H;
 
-				//System.out.println(index2);
-				//System.out.println(sum);
-				//System.out.println(difference);
 			} else {
 				difference = indexPlus - sum;
 
-				//System.out.println(indexPlus);
-				//System.out.println(sum);
-				//System.out.println(difference);
+				result =str + " + " + result + " = " + H;
+
 			}
 		}
 
