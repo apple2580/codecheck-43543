@@ -218,7 +218,7 @@ public class App {
 
 
 			System.out.println(indexPlus);
-			System.out.println(index_value);
+			System.out.println(index);
 			System.out.println(sum);
 
 		}
