@@ -263,6 +263,7 @@ public class App {
 
 				if (str.equals("H")) {
 					result = "A";
+					H = "H";
 				}
 
 				result =str + " + " + result + " = " + H;
@@ -270,8 +271,9 @@ public class App {
 			} else {
 				difference = indexPlus - sum;
 
-				result =str + " + " + result + " = " + H;
 
+
+				result =str + " + " + result + " = " + H;
 			}
 		}
 
