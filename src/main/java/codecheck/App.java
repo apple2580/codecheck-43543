@@ -263,7 +263,7 @@ public class App {
 
 				if (str.equals("H")) {
 					result = "A";
-					H = "H";
+					H.insert(0,"H");
 				}
 
 				result =str + " + " + result + " = " + H;
