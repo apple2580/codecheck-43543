@@ -212,7 +212,7 @@ public class App {
 			int difference = 0;
 
 			if (sum > index) {
-				difference = sum - indes;
+				difference = sum - index;
 				System.out.println(index);
 				System.out.println(sum);
 				System.out.println(difference);
