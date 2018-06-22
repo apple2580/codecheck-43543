@@ -10,7 +10,7 @@ public class App {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 		}
 		*/
-		String result = "あ";
+		String result = "99999999999999999999999999";
 		String subCommand = args[0];
 
 		// 基数
@@ -213,8 +213,8 @@ public class App {
 			StringBuilder sb = new StringBuilder();
 			StringBuilder H = new StringBuilder();
 
-			if (sum > index2) {
-				difference = sum - index2;
+			if (sum < index2) {
+				difference = index2 - sum;
 
 				while (difference != 0) {
 
@@ -263,15 +263,15 @@ public class App {
 
 				result =str + " + " + result + " = " + H;
 
-				System.out.println(index2);
-				System.out.println(sum);
-				System.out.println(difference);
+				//System.out.println(index2);
+				//System.out.println(sum);
+				//System.out.println(difference);
 			} else {
 				difference = indexPlus - sum;
 
-				System.out.println(indexPlus);
-				System.out.println(sum);
-				System.out.println(difference);
+				//System.out.println(indexPlus);
+				//System.out.println(sum);
+				//System.out.println(difference);
 			}
 		}
 
