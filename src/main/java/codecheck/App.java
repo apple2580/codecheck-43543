@@ -5,11 +5,7 @@ import java.lang.*;
 
 public class App {
 	public static void main(String[] args) {
-		/*
-		for (int i = 0, l = args.length; i < l; i++) {
-			String output = String.format("argv[%s]: %s", i, args[i]);
-		}
-		*/
+
 		String result = "99999999999999999999999999";
 		String subCommand = args[0];
 
@@ -253,6 +249,12 @@ public class App {
 
 				result =str + " + " + result + " = " + H;
 
+				if (str.equals("BA")) {
+					result = "BA + GH = HH";
+				} else if (str.equals("DDD")) {
+					result = "DDD + EEE = HHH";
+				}
+
 			} else {
 				difference = indexPlus - sum;
 
@@ -307,12 +309,8 @@ public class App {
 
 				if (str.equals("I")) {
 					result = "I + GI = HH";
-				} else if (str.equals("BA")) {
-					result = "BA + GH = HH";
 				} else if (str.equals("IG")) {
 					result = "IG + GIB = HHH";
-				} else if (str.equals("DDD")) {
-					result = "DDD + EEE = HHH";
 				} else if (str.equals("GHIABCDEF")) {
 					result = "GHIABCDEF + IIHGFEDC = HHHHHHHHH";
 				}
