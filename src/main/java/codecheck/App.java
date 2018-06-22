@@ -17,11 +17,12 @@ public class App {
 		int radix = 9;
 		//double radix = 9;
 
-		String en = "encode";	// 数字→アルファベット
 		String de = "decode";	// アルファベット→数字
+		String en = "encode";	// 数字→アルファベット
 		String al = "align";	// アルファベット→足すとHになるアルファベットを求める
 
 		if (subCommand.equals(de)) {
+
 			String str = args[1];
 			int len = str.length();
 			String[] strArray = new String[len];
@@ -165,12 +166,56 @@ public class App {
 
 			String str = args[1];
 			int len = str.length();
+			String[] strArray = new String[len];
+			int sum = 0;
+
+			for (int j = 0; j < len; j++) {
+				strArray[j] = String.valueOf(str.charAt(j));
+				int index = (int)Math.pow(radix, j);
+
+				switch (strArray[j]) {
+				case "A":
+					sum = sum + 0;
+					break;
+				case "B":
+					sum = sum + 1 * index;
+					break;
+				case "C":
+					sum = sum + 2 * index;
+					break;
+				case "D":
+					sum = sum + 3 * index;
+					break;
+				case "E":
+					sum = sum + 4 * index;
+					break;
+				case "F":
+					sum = sum + 5 * index;
+					break;
+				case "G":
+					sum = sum + 6 * index;
+					break;
+				case "H":
+					sum = sum + 7 * index;
+					break;
+				case "I":
+					sum = sum + 8 * index;
+					break;
+				default:
+					System.out.println("エラー");
+				}
+			}
 
 			int index = (int)Math.pow(radix, len);
 			int index_value = (int)Math.pow(value, len);
 
+			int difference = index - index_value;
+
+
+
 			System.out.println(index);
 			System.out.println(index_value);
+			System.out.println(sum);
 
 		}
 
