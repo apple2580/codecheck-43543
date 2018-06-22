@@ -13,6 +13,7 @@ public class App {
 			// 基数
 			int radix = 9;
 			//double radix = 9;
+
 			String en = "encode";	// 数字→アルファベット
 			String de = "decode";	// アルファベット→数字
 			String al = "align";	// アルファベット→足すとHになるアルファベットを求める
@@ -25,34 +26,35 @@ public class App {
 
 				for (int j = 0; j < len; j++) {
 					strArray[j] = String.valueOf(str.charAt(j));
+					int index = (int)Math.pow(radix, j);
 
 					switch (strArray[j]) {
 					case "A":
 						sum = sum + 0;
 						break;
 					case "B":
-						sum = sum + 1 * Math.pow(radix, j);
+						sum = sum + 1 * index;
 						break;
 					case "C":
-						sum = sum + 2 * Math.pow(radix, j);
+						sum = sum + 2 * index;
 						break;
 					case "D":
-						sum = sum + 3 * Math.pow(radix, j);
+						sum = sum + 3 * index;
 						break;
 					case "E":
-						sum = sum + 4 * Math.pow(radix, j);
+						sum = sum + 4 * index;
 						break;
 					case "F":
-						sum = sum + 5 * Math.pow(radix, j);
+						sum = sum + 5 * index;
 						break;
 					case "G":
-						sum = sum + 6 * Math.pow(radix, j);
+						sum = sum + 6 * index;
 						break;
 					case "H":
-						sum = sum + 7 * Math.pow(radix, j);
+						sum = sum + 7 * index;
 						break;
 					case "I":
-						sum = sum + 8 * Math.pow(radix, j);
+						sum = sum + 8 * index;
 						break;
 					default:
 						System.out.println("エラー");
