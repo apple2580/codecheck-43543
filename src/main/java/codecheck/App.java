@@ -158,8 +158,9 @@ public class App {
 				int len = str.length();
 
 				int index = (int)Math.pow(radix, len);
+				int index_value = (int)Math.pow(radix, value);
 
-				output = Integer.toString(index);
+				output = Integer.toString(index + "：" + index_value);
 
 			}
 
