@@ -261,7 +261,7 @@ public class App {
 					H.insert(0,"H");
 				}
 
-				if (str.equals("A")) {
+				if (str.equals("H")) {
 					result = "A";
 				}
 
