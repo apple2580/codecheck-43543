@@ -94,7 +94,8 @@ public class App {
 				}
 				*/
 
-				output = Integer.toString(sum);
+				// output = Integer.toString(sum);
+				String result = Integer.toString(sum);
 
 			} else if (subCommand.equals(en)) {
 
@@ -147,7 +148,9 @@ public class App {
 						default:
 							sb.insert(0,"エラー");
 						}
-						output = sb.toString();
+
+						// output = sb.toString();
+						String result = sb.toString();
 					}
 				}
 			} else if (subCommand.equals(al)) {
@@ -166,7 +169,7 @@ public class App {
 
 			}
 
-			System.out.println(output);
+			System.out.println(result);
 
 		}
 	}
