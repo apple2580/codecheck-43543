@@ -206,14 +206,18 @@ public class App {
 				}
 			}
 
-			int index = (int)Math.pow(radix, len);
-			int index_value = (int)Math.pow(value, len);
+			// int index = (int)Math.pow(radix, len);
+			int index = (int)Math.pow(value, len);
+			int indexPlus = (int)Math.pow(value, len + 1);
 
-			int difference = index - index_value;
+			if (sum > index) {
+				int difference = index - sum;
+			} else {
+				int difference = indexPlus - sum;
+			}
 
 
-
-			System.out.println(index);
+			System.out.println(indexPlus);
 			System.out.println(index_value);
 			System.out.println(sum);
 
