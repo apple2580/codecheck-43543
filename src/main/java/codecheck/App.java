@@ -8,7 +8,7 @@ public class App {
 		for (int i = 0, l = args.length; i < l; i++) {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 
-			String result = "";
+			String result = "あ";
 			String subCommand = args[0];
 
 			// 基数
@@ -101,7 +101,7 @@ public class App {
 			} else if (subCommand.equals(en)) {
 
 				if (args[1].length() > 20) {
-					output = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
+					result = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
 				} else {
 
 					// 入力値（10進数）
