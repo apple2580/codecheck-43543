@@ -24,7 +24,7 @@ public class App {
 				String[] strArray = new String[len];
 				int sum = 0;
 
-				for (int j = len; j > 0; j--) {
+				for (int j = len; j-- > 0;) {
 					strArray[j] = String.valueOf(str.charAt(j));
 				}
 
