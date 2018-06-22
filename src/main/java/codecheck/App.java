@@ -213,15 +213,17 @@ public class App {
 
 			if (sum > index) {
 				difference = index - sum;
+				System.out.println(index);
+				System.out.println(sum);
+				System.out.println(difference);
 			} else {
 				difference = indexPlus - sum;
+				System.out.println(indexPlus);
+				System.out.println(sum);
+				System.out.println(difference);
 			}
 
 
-			System.out.println(indexPlus);
-			System.out.println(index);
-			System.out.println(sum);
-			System.out.println(difference);
 
 		}
 
