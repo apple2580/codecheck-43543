@@ -273,6 +273,51 @@ public class App {
 
 
 
+				while (difference != 0) {
+
+					// 基数で割った余り
+					//double remainder_D = difference % radix;
+					//int remainder = (int)remainder_D;
+					int remainder = difference % radix;
+
+					difference = (difference - remainder) / radix;
+
+					switch (remainder) {
+					case 0:
+						sb.insert(0,"A");
+						break;
+					case 1:
+						sb.insert(0,"B");
+						break;
+					case 2:
+						sb.insert(0,"C");
+						break;
+					case 3:
+						sb.insert(0,"D");
+						break;
+					case 4:
+						sb.insert(0,"E");
+						break;
+					case 5:
+						sb.insert(0,"F");
+						break;
+					case 6:
+						sb.insert(0,"G");
+						break;
+					case 7:
+						sb.insert(0,"H");
+						break;
+					case 8:
+						sb.insert(0,"I");
+						break;
+					default:
+						sb.insert(0,"エラー");
+					}
+
+					result = sb.toString();
+					H.insert(0,"H");
+				}
+
 				result =str + " + " + result + " = " + H;
 			}
 		}
