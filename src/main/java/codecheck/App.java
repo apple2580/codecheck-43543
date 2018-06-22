@@ -17,7 +17,7 @@ public class App {
 			if (subCommand.equals(de)) {
 				String str = args[1];
 				int len = str.length();
-				String[] strArray = new String[len];
+				String[] strArray = new String[len+1];
 				int sum = 0;
 
 				for (int j = 0; j < len; j++) {
