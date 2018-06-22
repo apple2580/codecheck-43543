@@ -102,7 +102,6 @@ public class App {
 					output = "DHCCHDDEBFIDIDGCFEGDHDCGAFDDGDHBIAGADFBADFHFIBFFCGCAHEIAIIFDHDHGFDCGHIGEDIBEDEHADICBBHEHBCBEGBIEHAFDBDBFDHCIBEDBGEFFGACGACBFDAEAFCCHIGAHBIDIHCEBEBIBFCDEIIHAI";
 				} else {
 
-
 					// 入力値（10進数）
 					//int num10 = Integer.parseInt(args[1]);
 					double num10 = Double.parseDouble(args[1]);
@@ -152,6 +151,15 @@ public class App {
 					}
 				}
 			} else if (subCommand.equals(al)) {
+				// 基準値
+				int value = 7;
+
+				String str = args[1];
+				int len = str.length();
+
+				int index = (int)Math.pow(radix, len);
+
+				output = Integer.toString(index);
 
 			}
 
