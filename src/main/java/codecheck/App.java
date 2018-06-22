@@ -25,13 +25,14 @@ public class App {
 				int sum = 0;
 
 				// アルファベットを1文字ずつ配列に逆順で格納する
-				//for (int j = len; j-- > 0;) {
-				for (int j = len; j > 0; j++) {
+				/*
+				for (int j = len; j-- > 0;) {
 					strArray[j] = String.valueOf(str.charAt(j));
 				}
+				*/
 
 				for (int j = 0; j < len; j++) {
-					//strArray[j] = String.valueOf(str.charAt(j));
+					strArray[j] = String.valueOf(str.charAt(j));
 					int index = (int)Math.pow(radix, j);
 
 					switch (strArray[j]) {
