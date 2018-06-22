@@ -21,34 +21,34 @@ public class App {
 				int sum = 0;
 
 				for (int j = 0; j < len; j++) {
-					strrArray[j] = String.valueOf(str.charAt(j));
+					strArray[j] = String.valueOf(str.charAt(j));
 
-					switch (strrArray[j]) {
-					case A:
+					switch (strArray[j]) {
+					case "A":
 						sum = sum + 0;
 						break;
-					case B:
+					case "B":
 						sum = sum + (1 + (9 * (j - 1)));
 						break;
-					case C:
+					case "C":
 						sum = sum + (2 + (9 * (j - 1)));
 						break;
-					case D:
+					case "D":
 						sum = sum + (3 + (9 * (j - 1)));
 						break;
-					case E:
+					case "E":
 						sum = sum + (4 + (9 * (j - 1)));
 						break;
-					case F:
+					case "F":
 						sum = sum + (5 + (9 * (j - 1)));
 						break;
-					case G:
+					case "G":
 						sum = sum + (6 + (9 * (j - 1)));
 						break;
-					case H:
+					case "H":
 						sum = sum + (7 + (9 * (j - 1)));
 						break;
-					case I:
+					case "I":
 						sum = sum + (8 + (9 * (j - 1)));
 						break;
 					default:
