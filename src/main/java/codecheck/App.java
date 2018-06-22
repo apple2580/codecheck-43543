@@ -8,6 +8,7 @@ public class App {
 		for (int i = 0, l = args.length; i < l; i++) {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 
+			String result = "";
 			String subCommand = args[0];
 
 			// 基数
@@ -95,7 +96,7 @@ public class App {
 				*/
 
 				// output = Integer.toString(sum);
-				String result = Integer.toString(sum);
+				result = Integer.toString(sum);
 
 			} else if (subCommand.equals(en)) {
 
@@ -150,7 +151,7 @@ public class App {
 						}
 
 						// output = sb.toString();
-						String result = sb.toString();
+						result = sb.toString();
 					}
 				}
 			} else if (subCommand.equals(al)) {
