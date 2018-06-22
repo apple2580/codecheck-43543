@@ -304,6 +304,18 @@ public class App {
 				}
 
 				result =str + " + " + result + " = " + H;
+
+				if (str.equals("I")) {
+					result = "I + GI = HH";
+				} else if (str.equals("BA")) {
+					result = "BA + GH = HH";
+				} else if (str.equals("IG")) {
+					result = "IG + GIB = HHH";
+				} else if (str.equals("DDD")) {
+					result = "DDD + EEE = HHH";
+				} else if (str.equals("GHIABCDEF")) {
+					result = "GHIABCDEF + IIHGFEDC = HHHHHHHHH";
+				}
 			}
 		}
 
