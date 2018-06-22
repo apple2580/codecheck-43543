@@ -17,8 +17,46 @@ public class App {
 			if (subCommand.equals(de)) {
 				String str = args[1];
 				int len = str.length();
+				String[] strArray = new String[len];
 				int sum = 0;
 
+				for (int j = 0; j < len; j++) {
+					strrArray[j] = String.valueOf(str.charAt(j));
+
+					switch (strrArray[j]) {
+					case A:
+						sum = sum + 0;
+						break;
+					case B:
+						sum = sum + (1 + (9 * (j - 1)));
+						break;
+					case C:
+						sum = sum + (2 + (9 * (j - 1)));
+						break;
+					case D:
+						sum = sum + (3 + (9 * (j - 1)));
+						break;
+					case E:
+						sum = sum + (4 + (9 * (j - 1)));
+						break;
+					case F:
+						sum = sum + (5 + (9 * (j - 1)));
+						break;
+					case G:
+						sum = sum + (6 + (9 * (j - 1)));
+						break;
+					case H:
+						sum = sum + (7 + (9 * (j - 1)));
+						break;
+					case I:
+						sum = sum + (8 + (9 * (j - 1)));
+						break;
+					default:
+						System.out.println("エラー");
+					}
+				}
+
+				/*
 				for (int j = 1; j > len; j++) {
 					if (str.equals("A")) {
 						sum = sum + 0;
@@ -42,6 +80,7 @@ public class App {
 						System.out.println("エラー");
 					}
 				}
+				*/
 
 				output = Integer.toString(sum);
 
