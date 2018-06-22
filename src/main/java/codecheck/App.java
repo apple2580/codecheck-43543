@@ -28,28 +28,28 @@ public class App {
 						sum = sum + 0;
 						break;
 					case "B":
-						sum = sum + (1 + (9 * (j - 1)));
+						sum = sum + (1 + (9 * j));
 						break;
 					case "C":
-						sum = sum + (2 + (9 * (j - 1)));
+						sum = sum + (2 + (9 * j));
 						break;
 					case "D":
-						sum = sum + (3 + (9 * (j - 1)));
+						sum = sum + (3 + (9 * j));
 						break;
 					case "E":
-						sum = sum + (4 + (9 * (j - 1)));
+						sum = sum + (4 + (9 * j));
 						break;
 					case "F":
-						sum = sum + (5 + (9 * (j - 1)));
+						sum = sum + (5 + (9 * j));
 						break;
 					case "G":
-						sum = sum + (6 + (9 * (j - 1)));
+						sum = sum + (6 + (9 * j));
 						break;
 					case "H":
-						sum = sum + (7 + (9 * (j - 1)));
+						sum = sum + (7 + (9 * j));
 						break;
 					case "I":
-						sum = sum + (8 + (9 * (j - 1)));
+						sum = sum + (8 + (9 * j));
 						break;
 					default:
 						System.out.println("エラー");
